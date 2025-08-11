@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d878790c-b3d8-421d-a434-50ee9b23ef63</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>LPR_Intercon.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ControlIdUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidEquipamento.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidUsuario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Condominio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Morador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Rota.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Unidade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Veiculo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Visita.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\Visitante.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Condominio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Morador.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Unidade.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Veiculo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visita.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visitante.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
+  </ItemGroup>
+</Project>

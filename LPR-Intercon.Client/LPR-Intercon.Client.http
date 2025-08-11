@@ -1,0 +1,6 @@
+@LPR_Intercon.Client_HostAddress = http://localhost:5279
+
+GET {{LPR_Intercon.Client_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
