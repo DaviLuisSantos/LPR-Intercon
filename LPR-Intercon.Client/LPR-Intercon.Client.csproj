@@ -10,6 +10,9 @@
   <ItemGroup>
     <PackageReference Include="MemoryPack" Version="1.21.4" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
   </ItemGroup>
+
+  <Import Project="..\LPR-Intercon.Shared\LPR-Intercon.Shared.projitems" Label="Shared" />
 
 </Project>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace LPR_Intercon.Server.Data;
+namespace LPR_Intercon.Shared.Data;
 
 public class FirebirdDbContext(DbContextOptions<FirebirdDbContext> options) : DbContext(options)
 {

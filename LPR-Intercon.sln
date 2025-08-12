@@ -33,5 +33,6 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		LPR-Intercon.Shared\LPR-Intercon.Shared.projitems*{149f28e5-a63e-4811-82ec-581f89110dfd}*SharedItemsImports = 5
 		LPR-Intercon.Shared\LPR-Intercon.Shared.projitems*{d878790c-b3d8-421d-a434-50ee9b23ef63}*SharedItemsImports = 13
+		LPR-Intercon.Shared\LPR-Intercon.Shared.projitems*{f37315aa-a13b-48a0-8dba-bcedc4edee83}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal

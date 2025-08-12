@@ -18,4 +18,5 @@ public class Veiculo
     public Guid UnidadeId { get; set; }
     public Unidade Unidade { get; set; }
     public int FirebirdId { get; set; }
+    public bool Sincronizado { get; set; }
 }

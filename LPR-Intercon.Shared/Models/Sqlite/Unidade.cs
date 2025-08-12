@@ -15,13 +15,12 @@ public partial class Unidade : BaseEntity
     public string Nome { get; set; }
     public int Vagas { get; set; }
     public int IdFirebird { get; set; }
-    public StatusUnidade Status { get; set; }
+    public bool Sincronizado { get; set; }
+    public int? AndarQuadra { get; set; }
+    public int? AptoLote { get; set; }
+    public string? Bloco { get; set; }
+    public DateTime? DataSincronizacao { get; set; }
 
     [MemoryPackConstructor]
     public Unidade() { }
-    public enum StatusUnidade
-    {
-        Cliente,
-        Servidor
-    }
 }

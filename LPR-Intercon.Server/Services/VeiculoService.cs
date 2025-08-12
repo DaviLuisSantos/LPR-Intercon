@@ -1,4 +1,4 @@
-﻿using LPR_Intercon.Server.Data;
+﻿using LPR_Intercon.Shared.Data;
 
 namespace LPR_Intercon.Server.Services;
 

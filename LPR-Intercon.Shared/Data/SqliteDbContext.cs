@@ -1,7 +1,7 @@
 ﻿using LPR_Intercon.Shared.Models.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace LPR_Intercon.Server.Data;
+namespace LPR_Intercon.Shared.Data;
 
 public class SqliteDbContext(DbContextOptions<SqliteDbContext> options) : DbContext(options)
 {
@@ -16,6 +16,10 @@ public class SqliteDbContext(DbContextOptions<SqliteDbContext> options) : DbCont
          .HasOne(v => v.Unidade)
          .WithMany()
          .HasForeignKey(v => v.UnidadeId);
+
+        modelBuilder.Entity<Condominio>()
+            .HasIndex(c => c.Cnpj)
+            .IsUnique();
 
         /*
         modelBuilder.Entity<Veiculo>()

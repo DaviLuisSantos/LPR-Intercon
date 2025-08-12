@@ -9,6 +9,12 @@
     <Import_RootNamespace>LPR_Intercon.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\FirebirdDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SqliteDbContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\CondominioSyncDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\SyncResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\UnidadeSyncDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DTOs\VeiculoSyncDto.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ControlIdUsuario.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Firebird\CidEquipamento.cs" />
@@ -27,6 +33,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Veiculo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visita.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Sqlite\Visitante.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\CondominioRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CondominioMappingService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
   </ItemGroup>
 </Project>
